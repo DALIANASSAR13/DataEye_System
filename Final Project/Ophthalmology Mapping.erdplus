@@ -1,0 +1,2277 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "806763d7-061d-4dbc-9461-13fa5e6007ed",
+        "type": "Table",
+        "position": {
+          "x": 423.3623464302953,
+          "y": -145.93508739940967
+        },
+        "data": {
+          "label": "EYE_SURGERY",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "19c01550-f1a2-456f-91e0-f99b7af08149",
+              "name": "surgery_id",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "7c2633ee-10c7-4eba-9da3-443fca48e340",
+              "name": "duration_minutes",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "c296b002-aac2-409c-aa7f-3869eec6c950",
+              "name": "surgery_date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "4e1d4d09-e84f-421f-b3b7-0de76392c8f2",
+              "name": "surgery_type",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "5d2a1048-be6b-45ab-9f35-b34b26eebec8",
+              "name": "outcome",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "327dacf1-5a05-48b1-8086-12c20a95ecee",
+              "name": "notes",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_60cec6e0-c978-4b44-8630-3f58eabbfdbb",
+              "name": "fk_PATIENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "ab54e4f1-94ff-4411-b0d7-557a2b55ace1",
+                "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+                "columns": [
+                  {
+                    "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                    "name": "P_SSN",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                    "name": "P_Number",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 218
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+        "type": "Table",
+        "position": {
+          "x": 972.2548571218765,
+          "y": -690.7401200036554
+        },
+        "data": {
+          "label": "PATIENT",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "92bc51b6-058a-4251-b908-29041f07774c",
+              "name": "P_SSN",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": true
+            },
+            {
+              "id": "b29b90cf-2798-4280-8a51-9cf7cf1d47a7",
+              "name": "name",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "5b4f1719-2dc0-4d8d-b247-cd338bc1a57a",
+              "name": "phone",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "94bfd9f0-f7bd-427a-8d1e-5339d4e145bf",
+              "name": "sex",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "f00a024c-b087-45bb-9489-18c0389f262f",
+              "name": "birthdate",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "b31c4573-d2da-437e-a196-a7ebd477f8c0",
+              "name": "temperature",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "548bf027-16f2-4fa2-a6e8-d11d433ea396",
+              "name": "blood_pressure",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "0b488d9c-0f6b-4e1a-8114-0d1412123c71",
+              "name": "heart_rate",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "780f6ba8-137e-4ad6-a1b9-1b6c592e876f",
+              "name": "medical_history",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "565a1b2e-82e5-4c63-8f77-7a8cdd36d87e",
+              "name": "admitted_date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "d783f1e7-6bac-4041-84ed-30d30a43a789",
+              "name": "address",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+              "name": "P_Number",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": true
+            },
+            {
+              "id": "fk_f8caf599-2deb-4836-9211-54d7d0229ff6",
+              "name": "fk_DIAGNOSIS",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "07014b4e-dfcd-490e-8dc8-c985797b4c7e",
+                "sourceTableId": "613de37d-cd78-41b9-a671-0ff3965d49c3",
+                "columns": [
+                  {
+                    "id": "fk_74c2ffb8-78b4-4eb1-a40c-ea58a1946a7f",
+                    "name": "diagnosis_id",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fk_9ff59f31-e85c-4b38-849d-08750b45404a",
+              "name": "fk_Appointment",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "5974c578-ea21-40b6-a156-9add297fd430",
+                "sourceTableId": "7d9b3b48-fd76-440b-8719-76842467160f",
+                "columns": [
+                  {
+                    "id": "fk_151656e6-bc8d-4e9d-9371-41616729bc03",
+                    "name": "Appointment_ID",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 377
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "7d9b3b48-fd76-440b-8719-76842467160f",
+        "type": "Table",
+        "position": {
+          "x": 1396.4416971559822,
+          "y": -672.2869725994335
+        },
+        "data": {
+          "label": "Appointment",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "151656e6-bc8d-4e9d-9371-41616729bc03",
+              "name": "Appointment_ID",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "0ad75220-23bc-47d5-a673-a4dabc704b8c",
+              "name": "Appointment_time",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "1090ec1b-c417-4091-ac14-4eb177e90804",
+              "name": "Appointment_date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "cdca7c21-5482-4e52-a838-44f2819bdab9",
+              "name": "Status",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 126
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "613de37d-cd78-41b9-a671-0ff3965d49c3",
+        "type": "Table",
+        "position": {
+          "x": 333.93349919132555,
+          "y": 184.10337586787148
+        },
+        "data": {
+          "label": "DIAGNOSIS",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "74c2ffb8-78b4-4eb1-a40c-ea58a1946a7f",
+              "name": "diagnosis_id",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "ff1d81b7-f638-4644-a2e4-7b7b1e546bda",
+              "name": "notes",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fda5a8be-c88c-4229-a547-fce6a06daf53",
+              "name": "diagnosis_date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "2a2d57d4-2885-49e5-922f-658cc949e6a8",
+              "name": "condition_name",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "daa31776-8e1e-44c6-ba8f-32bae85861d7",
+              "name": "severity",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_34a858ca-d324-45a4-a79b-3b65bc6fe8cf",
+              "name": "fk_DOCTOR",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "ace19894-a91c-4948-a87b-f2837a70b943",
+                "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+                "columns": [
+                  {
+                    "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                    "name": "D_SSN",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 177
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "13f135c1-b1b3-4af5-8959-22fbd32bc61b",
+        "type": "Table",
+        "position": {
+          "x": 907.5772585338412,
+          "y": 205.57811164402816
+        },
+        "data": {
+          "label": "PRESCRIPTION",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "32bf265f-6e90-4c5b-bbc5-94bdaaf8386d",
+              "name": "p_ID",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "5ac3cfaa-c01f-4dba-adcf-930beb9a098e",
+              "name": "prescription_date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_f9a25174-99da-4357-9716-3df1e4d31172",
+              "name": "fk_PATIENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "57da0149-c426-4d19-b681-19e5c56ef0fa",
+                "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+                "columns": [
+                  {
+                    "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                    "name": "P_SSN",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                    "name": "P_Number",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fk_41034199-4844-4198-8eea-84438e53b98d",
+              "name": "fk_DOCTOR",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "f8844d73-0873-4cec-92a7-d40db534ea87",
+                "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+                "columns": [
+                  {
+                    "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                    "name": "D_SSN",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 143
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4b6a22dd-fa7c-4b74-a127-8eb9b6644bfc",
+        "type": "Table",
+        "position": {
+          "x": -14.993710328047257,
+          "y": -770.5625290286176
+        },
+        "data": {
+          "label": "EYE_EXAMINATION",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "1153790d-430f-4d40-8265-95c3b527ffbe",
+              "name": "eye_exam_id",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "4528666b-70d4-4245-93a6-6ff25bf018d5",
+              "name": "visual_acuity_left",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "a8f697b1-8dc7-4928-a788-8ce17cba7b3b",
+              "name": "visual_acuity_right",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "589ec117-0871-475c-a953-a9d5739ffc64",
+              "name": "color_vision",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "66d93832-a712-40b3-b387-6b4cb7d0fa59",
+              "name": "exam_date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "1cf1fcce-3ad8-4f47-9ca7-de80220ac6bb",
+              "name": "field_of_vision",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "8b8a7bb1-5ca4-48bd-a98a-a294cadeb075",
+              "name": "notes",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "82ba5c20-d11a-48a0-a0e7-e082593b82e0",
+              "name": "IOP_left",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "696da11a-2430-475c-82ae-4e5ee7fe5571",
+              "name": "IOP_right",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_a902a7bc-ef36-4df7-8e14-fa7db599a053",
+              "name": "fk_PATIENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "8c58184b-6f7e-42e5-9f69-222500c48ed6",
+                "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+                "columns": [
+                  {
+                    "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                    "name": "P_SSN",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                    "name": "P_Number",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fk_6ec3e23b-43d7-43d5-9d2d-6b1d562e436d",
+              "name": "fk_DOCTOR",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "24e847f4-b9d7-408c-8ba1-bdfc5dbcd61d",
+                "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+                "columns": [
+                  {
+                    "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                    "name": "D_SSN",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 318
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+        "type": "Table",
+        "position": {
+          "x": -11.251012083255915,
+          "y": 494.3964587793457
+        },
+        "data": {
+          "label": "DOCTOR",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+              "name": "D_SSN",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "4dcf864d-ca52-4f49-8118-ac35d55b8175",
+              "name": "name",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "4a04e1c2-2add-4c0e-bfe4-1ddbb53809d4",
+              "name": "sex",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "b664ea93-72fc-49fe-991d-5693aced1fcf",
+              "name": "birth_date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "01232109-1c2c-4f9c-bf4e-515d0c25c969",
+              "name": "scientific_area",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "c0c32c29-32bd-4c37-8020-856301c49e4e",
+              "name": "degree",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 176
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "caad3b22-3584-4c82-833d-7687d24fa64d",
+        "type": "Table",
+        "position": {
+          "x": 979.2566484380108,
+          "y": -27.287641109560283
+        },
+        "data": {
+          "label": "Treatment",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "3c27c535-d509-4bfe-821f-8479ca07a6e3",
+              "name": "start_date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "ee6a882f-3423-4428-bff8-174f7b50cc56",
+              "name": "hours_per_week",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_33015b13-b938-43ed-972f-141c40d3288c",
+              "name": "fk_DOCTOR",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "2081d6da-ba64-4798-8667-0e81878a8ec0",
+                "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+                "columns": [
+                  {
+                    "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                    "name": "D_SSN",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_dab48366-17e8-4030-a9fb-9b6be2c374f9",
+              "name": "fk_PATIENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "f16bd115-feca-4bb5-af90-afe218cb443b",
+                "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+                "columns": [
+                  {
+                    "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                    "name": "P_SSN",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                    "name": "P_Number",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_645d99cf-2a7b-41cc-9222-126e2fd4fe05",
+              "name": "fk_Appointment",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "8e9c2d9c-f5ca-4e1a-88d1-f79d95114a76",
+                "sourceTableId": "7d9b3b48-fd76-440b-8719-76842467160f",
+                "columns": [
+                  {
+                    "id": "fk_151656e6-bc8d-4e9d-9371-41616729bc03",
+                    "name": "Appointment_ID",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 169
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "2da346b2-506d-4380-be62-9c803b33e458",
+        "type": "Table",
+        "position": {
+          "x": 104.43436561468465,
+          "y": -8.7549869056764
+        },
+        "data": {
+          "label": "Performs",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_39740700-e7aa-4ebb-a179-28379ffa81e8",
+              "name": "fk_DOCTOR",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "654c09de-b238-4527-b12f-938fa1cb48ef",
+                "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+                "columns": [
+                  {
+                    "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                    "name": "D_SSN",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_16d0897b-892c-4b32-a7f8-6869b2ad3d8a",
+              "name": "fk_EYE_SURGERY",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "85cd1b49-897e-4a92-bcdf-6dfd167fbe7f",
+                "sourceTableId": "806763d7-061d-4dbc-9461-13fa5e6007ed",
+                "columns": [
+                  {
+                    "id": "fk_19c01550-f1a2-456f-91e0-f99b7af08149",
+                    "name": "surgery_id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 78
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "10dfe51d-bc63-4e7b-901c-8b02ccd72fe0",
+        "type": "Table",
+        "position": {
+          "x": 1693.7570035487527,
+          "y": 343.4747119640971
+        },
+        "data": {
+          "label": "MEDICATION",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "6e8bb42f-a952-4d8a-a8ef-313563f369a8",
+              "name": "medicine_id",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 52
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "0dc598cb-2da6-4712-9837-ede3a617105b",
+        "type": "Table",
+        "position": {
+          "x": 1340.7238054297704,
+          "y": 280.7608442742272
+        },
+        "data": {
+          "label": "Contain",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "3893cb34-0d33-40dc-9308-d31703294859",
+              "name": "dose",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "e8fefa45-e4e8-4945-a421-9801e7da9453",
+              "name": "start_date",
+              "type": "INT",
+              "position": 1,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "020aa764-574d-4e19-8699-781c7d957592",
+              "name": "end_date",
+              "type": "INT",
+              "position": 2,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "29b7161c-8661-4da8-8b35-e062a81b0ac8",
+              "name": "times_per_day",
+              "type": "INT",
+              "position": 3,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_2c6806c0-8542-4668-960b-c1b6a839d44d",
+              "name": "fk_PRESCRIPTION",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "cc436b14-28a5-412c-b85c-995267021d8b",
+                "sourceTableId": "13f135c1-b1b3-4af5-8959-22fbd32bc61b",
+                "columns": [
+                  {
+                    "id": "fk_32bf265f-6e90-4c5b-bbc5-94bdaaf8386d",
+                    "name": "p_ID",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_0cd5cd28-a943-4d71-888a-a93b7254f246",
+              "name": "fk_MEDICATION",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "5d6a23f0-a24b-4cbd-b98d-d07c1a2b1e7b",
+                "sourceTableId": "10dfe51d-bc63-4e7b-901c-8b02ccd72fe0",
+                "columns": [
+                  {
+                    "id": "fk_6e8bb42f-a952-4d8a-a8ef-313563f369a8",
+                    "name": "medicine_id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 177
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "e7b4efe1-bf7e-45d7-b633-fc68a5e8944c",
+        "type": "Table",
+        "position": {
+          "x": 1740.9885242096047,
+          "y": -67.29436231078954
+        },
+        "data": {
+          "label": "PAYMENT",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "abdadeca-ec21-4f28-9b0a-025510827f32",
+              "name": "Payment_ID",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "406829d3-de3e-433a-8560-6a83ed2d1f15",
+              "name": "status",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false
+            },
+            {
+              "id": "fe2860f4-6d14-4b82-a901-d5f17044ba8f",
+              "name": "method",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false
+            },
+            {
+              "id": "3db6807b-b600-49c9-974e-b58f2c0444e2",
+              "name": "date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false
+            },
+            {
+              "id": "35973d63-8266-46d2-a6ea-138c973c313c",
+              "name": "amount",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false
+            },
+            {
+              "id": "fk_d944e7ed-d8e1-442b-8661-7b72cbe33d3b",
+              "name": "fk_Treatment",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "758c22d6-ee98-4d9e-a27a-ffbc31702b40",
+                "sourceTableId": "caad3b22-3584-4c82-833d-7687d24fa64d",
+                "columns": [
+                  {
+                    "id": "fk_fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                    "name": "D_SSN",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_92bc51b6-058a-4251-b908-29041f07774c",
+                    "name": "P_SSN",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                    "name": "P_Number",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 209
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "3d1436cc-ee1f-41d1-a8d7-5a7e9566a29a",
+        "type": "Table",
+        "position": {
+          "x": -669.9796414692634,
+          "y": 32.14994709540326
+        },
+        "data": {
+          "label": "USER_ACCOUNT",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "4ac0c273-52ec-4b80-94eb-af96299267e0",
+              "name": "user_id",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "b5831ba6-f5f3-4520-9818-08ed31eba730",
+              "name": "username",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "0403bed5-1834-4961-8ec4-5da1b3e8bf65",
+              "name": "email",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "50690c3c-7e5e-4e15-9d7e-6c73b49d643c",
+              "name": "hashed_password",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "6e1b5e1a-9c9b-40fb-b78d-1e96ee879488",
+              "name": "phone",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "c9710f8d-f7e6-41f2-b325-240bf8a918b1",
+              "name": "created_at",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "82d69855-3efb-4429-92ce-463aef69f31f",
+              "name": "last_login",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "96ffbfc1-639d-4321-9d3d-2e083a16440c",
+              "name": "status",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "f4962bb8-9cef-4002-9d6f-4eabeccfeee8",
+              "name": "role",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isUnique": false
+            },
+            {
+              "id": "fk_41b0b517-f328-40fb-be2c-1cc51c42d701",
+              "name": "fk_PATIENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "14825b95-1098-4ac4-9ab9-b3eb22e1708b",
+                "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+                "columns": [
+                  {
+                    "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                    "name": "P_SSN",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                    "name": "P_Number",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fk_7f55432e-886a-4e9a-a296-bed8d506fd4a",
+              "name": "fk_DOCTOR",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "a74efc4c-e00b-4efb-8178-24c4d12c81be",
+                "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+                "columns": [
+                  {
+                    "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                    "name": "D_SSN",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 318
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "d81dc06f-794a-4dc3-b4be-6d3e20770dc8",
+        "type": "Table",
+        "position": {
+          "x": 2107.6800710490443,
+          "y": -118.81317868500636
+        },
+        "data": {
+          "label": "Refund",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "cc2fed01-f76f-4cf5-b9b3-2b807d53bbb5",
+              "name": "Refund_ID",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "f2f8357e-4f24-4a52-a7b3-1f08d2b2ee99",
+              "name": "Status",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "2d988128-945d-4ac9-a65e-071ad919aca0",
+              "name": "amount",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_6c9642e9-220c-4344-a81c-822f2032c1bb",
+              "name": "fk_PAYMENT",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "441fd08e-d74b-47a8-a6cf-43d5827f9813",
+                "sourceTableId": "e7b4efe1-bf7e-45d7-b633-fc68a5e8944c",
+                "columns": [
+                  {
+                    "id": "fk_abdadeca-ec21-4f28-9b0a-025510827f32",
+                    "name": "Payment_ID",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                    "name": "D_SSN",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_fk_92bc51b6-058a-4251-b908-29041f07774c",
+                    "name": "P_SSN",
+                    "type": "INT"
+                  },
+                  {
+                    "id": "fk_fk_fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                    "name": "P_Number",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 175
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "a729ed95-933c-46d1-89a3-ef252bfe3510",
+        "type": "Table",
+        "position": {
+          "x": 6753.25,
+          "y": 70
+        },
+        "data": {
+          "label": "Table",
+          "isConnectable": false,
+          "columns": [],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 27
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "90aaa9a4-f397-4d9c-87e4-0b39961a754c",
+        "type": "Table",
+        "position": {
+          "x": 719.9272218081727,
+          "y": 578.6316471701628
+        },
+        "data": {
+          "label": "Department",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "f2e0c6b8-56ed-4fc9-ab92-4a77a42ec098",
+              "name": "Name",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "7e9eac04-4c18-4967-97d0-2d982c0347ce",
+              "name": "Department_Code",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "ad7210d4-3c82-413c-ab0a-0b631d0a052d",
+              "name": "Start_date",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_e2de118a-8b14-4a11-91a3-91527cc7fee9",
+              "name": "fk_Hospital",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "d35b58cf-742c-412a-b346-fca295dca6d4",
+                "sourceTableId": "4ceb3473-416c-4302-9096-6e35176696f5",
+                "columns": [
+                  {
+                    "id": "fk_785d424d-b66f-4dcd-a281-1c2b48334a5e",
+                    "name": "Hospital_ID",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "2d972673-3783-4dcd-b452-e9a9cb0f2fdd",
+              "name": "location",
+              "type": "INT",
+              "position": 0
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 152
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "0dabf1a2-5aef-444b-ad98-b015d1d83a01",
+        "type": "Table",
+        "position": {
+          "x": 403.1636440352576,
+          "y": 573.2257278674033
+        },
+        "data": {
+          "label": "works_on",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_0b8ac9c2-2afe-45a0-a72b-a87109ef032f",
+              "name": "fk_DOCTOR",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "a6a2ec3b-f904-45ba-9708-5a0ceb1c85cf",
+                "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+                "columns": [
+                  {
+                    "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                    "name": "D_SSN",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "bdc4752a-c2a3-4159-b6e3-92fcdc38fce5",
+              "name": "Join_date",
+              "type": "None",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_d3804402-3834-4394-b3cd-3e682815a29e",
+              "name": "fk_Department",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "f0612766-76a2-46b2-8b33-d11f7bca781e",
+                "sourceTableId": "90aaa9a4-f397-4d9c-87e4-0b39961a754c",
+                "columns": [
+                  {
+                    "id": "fk_7e9eac04-4c18-4967-97d0-2d982c0347ce",
+                    "name": "Department_Code",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 102
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "39b69799-ac91-4237-aaca-6b5006213d20",
+        "type": "Table",
+        "position": {
+          "x": 2043.7901570949548,
+          "y": -722.5386153977211
+        },
+        "data": {
+          "label": "Room",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "dded1c00-2a68-418b-9d02-9c46655d1038",
+              "name": "Room_ID",
+              "type": "None",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "5c8c7882-34c5-483a-85e6-c3c516a1cb28",
+              "name": "Status",
+              "type": "None",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fc558467-1744-4ed5-aa8d-c80d04dbc8bb",
+              "name": "Capacity",
+              "type": "None",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "087ec20f-55f8-4472-8eee-bc2861bb4555",
+              "name": "Room_Number",
+              "type": "None",
+              "position": 0,
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 126
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "27287a18-1513-49ad-831c-6e93a40161bf",
+        "type": "Table",
+        "position": {
+          "x": 1696.0128312106986,
+          "y": -429.42300542302263
+        },
+        "data": {
+          "label": "Reserve",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "8ec25b88-212c-4b08-8a28-46e2c5717597",
+              "name": "Start_time",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "32cf26d1-fda1-4529-a14c-cf18d38ed48d",
+              "name": "End_time",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "bd5431d7-d04a-411e-a82f-451b8814f306",
+              "name": "purpose",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "6eaef932-f9ed-4ede-b564-a40d71a41728",
+              "name": "RE_ID",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "b25137f8-59c6-44d4-baf8-7a78d305746e",
+              "name": "SSN",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false
+            },
+            {
+              "id": "fk_9daef4f3-af40-409f-9279-690ef3b8658b",
+              "name": "fk_Room",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "81658ecf-4e96-4919-9d9a-ef584400a734",
+                "sourceTableId": "39b69799-ac91-4237-aaca-6b5006213d20",
+                "columns": [
+                  {
+                    "id": "fk_dded1c00-2a68-418b-9d02-9c46655d1038",
+                    "name": "Room_ID",
+                    "type": "None"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_4f872aec-5f38-432e-ae83-9052fa02e09e",
+              "name": "fk_EYE_EXAMINATION",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "31b65328-4447-4d50-b727-05aec8ce35f8",
+                "sourceTableId": "4b6a22dd-fa7c-4b74-a127-8eb9b6644bfc",
+                "columns": [
+                  {
+                    "id": "fk_1153790d-430f-4d40-8265-95c3b527ffbe",
+                    "name": "eye_exam_id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_57159a15-f754-47bc-9e70-d5b5a472640a",
+              "name": "fk_Appointment",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "0fc2c06d-3d75-4a13-9ea5-cc7ee295175b",
+                "sourceTableId": "7d9b3b48-fd76-440b-8719-76842467160f",
+                "columns": [
+                  {
+                    "id": "fk_151656e6-bc8d-4e9d-9371-41616729bc03",
+                    "name": "Appointment_ID",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_9fbd3e46-169a-497f-806d-267515fbddf0",
+              "name": "fk_EYE_SURGERY",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "ea2201bc-142a-4cf3-9845-07c6c48751b7",
+                "sourceTableId": "806763d7-061d-4dbc-9461-13fa5e6007ed",
+                "columns": [
+                  {
+                    "id": "fk_19c01550-f1a2-456f-91e0-f99b7af08149",
+                    "name": "surgery_id",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 252
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "4ceb3473-416c-4302-9096-6e35176696f5",
+        "type": "Table",
+        "position": {
+          "x": 1122.3042320602844,
+          "y": 577.8920170105068
+        },
+        "data": {
+          "label": "Hospital",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "785d424d-b66f-4dcd-a281-1c2b48334a5e",
+              "name": "Hospital_ID",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "3dbe3d85-665c-4453-b8e9-9732334466c3",
+              "name": "Name",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "f72376b9-71d8-47de-afdf-1cd378701212",
+              "name": "Phone",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "35c953ac-745a-467f-a254-7d6b5b5e158c",
+              "name": "Email",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "c53c5b60-d3e2-4ff2-8ec2-3d7c082b1786",
+              "name": "Lattitude",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "3555e0c7-8dbb-4809-9cb6-71dfe36ec351",
+              "name": "Longitude",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 176
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "91016276-e3c2-4c25-a164-380ca4b3fca0->caad3b22-3584-4c82-833d-7687d24fa64d_2081d6da-ba64-4798-8667-0e81878a8ec0",
+        "type": "Relational",
+        "source": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+        "targetHandle": "foreign-key-handle-2081d6da-ba64-4798-8667-0e81878a8ec0",
+        "target": "caad3b22-3584-4c82-833d-7687d24fa64d",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "2081d6da-ba64-4798-8667-0e81878a8ec0",
+            "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+            "columns": [
+              {
+                "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                "name": "SSN",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "91016276-e3c2-4c25-a164-380ca4b3fca0->2da346b2-506d-4380-be62-9c803b33e458_654c09de-b238-4527-b12f-938fa1cb48ef",
+        "type": "Relational",
+        "source": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+        "targetHandle": "foreign-key-handle-654c09de-b238-4527-b12f-938fa1cb48ef",
+        "target": "2da346b2-506d-4380-be62-9c803b33e458",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "654c09de-b238-4527-b12f-938fa1cb48ef",
+            "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+            "columns": [
+              {
+                "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                "name": "D_SSN",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "806763d7-061d-4dbc-9461-13fa5e6007ed->2da346b2-506d-4380-be62-9c803b33e458_85cd1b49-897e-4a92-bcdf-6dfd167fbe7f",
+        "type": "Relational",
+        "source": "806763d7-061d-4dbc-9461-13fa5e6007ed",
+        "targetHandle": "foreign-key-handle-85cd1b49-897e-4a92-bcdf-6dfd167fbe7f",
+        "target": "2da346b2-506d-4380-be62-9c803b33e458",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "85cd1b49-897e-4a92-bcdf-6dfd167fbe7f",
+            "sourceTableId": "806763d7-061d-4dbc-9461-13fa5e6007ed",
+            "columns": [
+              {
+                "id": "fk_19c01550-f1a2-456f-91e0-f99b7af08149",
+                "name": "surgery_id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "f6db8fbb-ef37-4008-8ba4-431c076d06c7->806763d7-061d-4dbc-9461-13fa5e6007ed_ab54e4f1-94ff-4411-b0d7-557a2b55ace1",
+        "type": "Relational",
+        "source": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+        "targetHandle": "foreign-key-handle-ab54e4f1-94ff-4411-b0d7-557a2b55ace1",
+        "target": "806763d7-061d-4dbc-9461-13fa5e6007ed",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "ab54e4f1-94ff-4411-b0d7-557a2b55ace1",
+            "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+            "columns": [
+              {
+                "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                "name": "P_SSN",
+                "type": "INT"
+              },
+              {
+                "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                "name": "P_Number",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "f6db8fbb-ef37-4008-8ba4-431c076d06c7->13f135c1-b1b3-4af5-8959-22fbd32bc61b_57da0149-c426-4d19-b681-19e5c56ef0fa",
+        "type": "Relational",
+        "source": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+        "targetHandle": "foreign-key-handle-57da0149-c426-4d19-b681-19e5c56ef0fa",
+        "target": "13f135c1-b1b3-4af5-8959-22fbd32bc61b",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "57da0149-c426-4d19-b681-19e5c56ef0fa",
+            "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+            "columns": [
+              {
+                "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                "name": "P_SSN",
+                "type": "INT"
+              },
+              {
+                "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                "name": "P_Number",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "f6db8fbb-ef37-4008-8ba4-431c076d06c7->4b6a22dd-fa7c-4b74-a127-8eb9b6644bfc_8c58184b-6f7e-42e5-9f69-222500c48ed6",
+        "type": "Relational",
+        "source": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+        "targetHandle": "foreign-key-handle-8c58184b-6f7e-42e5-9f69-222500c48ed6",
+        "target": "4b6a22dd-fa7c-4b74-a127-8eb9b6644bfc",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "8c58184b-6f7e-42e5-9f69-222500c48ed6",
+            "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+            "columns": [
+              {
+                "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                "name": "P_SSN",
+                "type": "INT"
+              },
+              {
+                "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                "name": "P_Number",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "613de37d-cd78-41b9-a671-0ff3965d49c3->f6db8fbb-ef37-4008-8ba4-431c076d06c7_07014b4e-dfcd-490e-8dc8-c985797b4c7e",
+        "type": "Relational",
+        "source": "613de37d-cd78-41b9-a671-0ff3965d49c3",
+        "targetHandle": "foreign-key-handle-07014b4e-dfcd-490e-8dc8-c985797b4c7e",
+        "target": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "07014b4e-dfcd-490e-8dc8-c985797b4c7e",
+            "sourceTableId": "613de37d-cd78-41b9-a671-0ff3965d49c3",
+            "columns": [
+              {
+                "id": "fk_74c2ffb8-78b4-4eb1-a40c-ea58a1946a7f",
+                "name": "diagnosis_id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "f6db8fbb-ef37-4008-8ba4-431c076d06c7->caad3b22-3584-4c82-833d-7687d24fa64d_f16bd115-feca-4bb5-af90-afe218cb443b",
+        "type": "Relational",
+        "source": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+        "targetHandle": "foreign-key-handle-f16bd115-feca-4bb5-af90-afe218cb443b",
+        "target": "caad3b22-3584-4c82-833d-7687d24fa64d",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "f16bd115-feca-4bb5-af90-afe218cb443b",
+            "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+            "columns": [
+              {
+                "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                "name": "P_SSN",
+                "type": "INT"
+              },
+              {
+                "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                "name": "P_Number",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "13f135c1-b1b3-4af5-8959-22fbd32bc61b->0dc598cb-2da6-4712-9837-ede3a617105b_cc436b14-28a5-412c-b85c-995267021d8b",
+        "type": "Relational",
+        "source": "13f135c1-b1b3-4af5-8959-22fbd32bc61b",
+        "targetHandle": "foreign-key-handle-cc436b14-28a5-412c-b85c-995267021d8b",
+        "target": "0dc598cb-2da6-4712-9837-ede3a617105b",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "cc436b14-28a5-412c-b85c-995267021d8b",
+            "sourceTableId": "13f135c1-b1b3-4af5-8959-22fbd32bc61b",
+            "columns": [
+              {
+                "id": "fk_32bf265f-6e90-4c5b-bbc5-94bdaaf8386d",
+                "name": "p_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "10dfe51d-bc63-4e7b-901c-8b02ccd72fe0->0dc598cb-2da6-4712-9837-ede3a617105b_5d6a23f0-a24b-4cbd-b98d-d07c1a2b1e7b",
+        "type": "Relational",
+        "source": "10dfe51d-bc63-4e7b-901c-8b02ccd72fe0",
+        "targetHandle": "foreign-key-handle-5d6a23f0-a24b-4cbd-b98d-d07c1a2b1e7b",
+        "target": "0dc598cb-2da6-4712-9837-ede3a617105b",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "5d6a23f0-a24b-4cbd-b98d-d07c1a2b1e7b",
+            "sourceTableId": "10dfe51d-bc63-4e7b-901c-8b02ccd72fe0",
+            "columns": [
+              {
+                "id": "fk_6e8bb42f-a952-4d8a-a8ef-313563f369a8",
+                "name": "medicine_id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "91016276-e3c2-4c25-a164-380ca4b3fca0->13f135c1-b1b3-4af5-8959-22fbd32bc61b_f8844d73-0873-4cec-92a7-d40db534ea87",
+        "type": "Relational",
+        "source": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+        "targetHandle": "foreign-key-handle-f8844d73-0873-4cec-92a7-d40db534ea87",
+        "target": "13f135c1-b1b3-4af5-8959-22fbd32bc61b",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "f8844d73-0873-4cec-92a7-d40db534ea87",
+            "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+            "columns": [
+              {
+                "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                "name": "D_SSN",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "91016276-e3c2-4c25-a164-380ca4b3fca0->613de37d-cd78-41b9-a671-0ff3965d49c3_ace19894-a91c-4948-a87b-f2837a70b943",
+        "type": "Relational",
+        "source": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+        "targetHandle": "foreign-key-handle-ace19894-a91c-4948-a87b-f2837a70b943",
+        "target": "613de37d-cd78-41b9-a671-0ff3965d49c3",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "ace19894-a91c-4948-a87b-f2837a70b943",
+            "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+            "columns": [
+              {
+                "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                "name": "D_SSN",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "91016276-e3c2-4c25-a164-380ca4b3fca0->4b6a22dd-fa7c-4b74-a127-8eb9b6644bfc_24e847f4-b9d7-408c-8ba1-bdfc5dbcd61d",
+        "type": "Relational",
+        "source": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+        "targetHandle": "foreign-key-handle-24e847f4-b9d7-408c-8ba1-bdfc5dbcd61d",
+        "target": "4b6a22dd-fa7c-4b74-a127-8eb9b6644bfc",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "24e847f4-b9d7-408c-8ba1-bdfc5dbcd61d",
+            "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+            "columns": [
+              {
+                "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                "name": "D_SSN",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "f6db8fbb-ef37-4008-8ba4-431c076d06c7->3d1436cc-ee1f-41d1-a8d7-5a7e9566a29a_14825b95-1098-4ac4-9ab9-b3eb22e1708b",
+        "type": "Relational",
+        "source": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+        "targetHandle": "foreign-key-handle-14825b95-1098-4ac4-9ab9-b3eb22e1708b",
+        "target": "3d1436cc-ee1f-41d1-a8d7-5a7e9566a29a",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "14825b95-1098-4ac4-9ab9-b3eb22e1708b",
+            "sourceTableId": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+            "columns": [
+              {
+                "id": "fk_92bc51b6-058a-4251-b908-29041f07774c",
+                "name": "P_SSN",
+                "type": "INT"
+              },
+              {
+                "id": "fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                "name": "P_Number",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "91016276-e3c2-4c25-a164-380ca4b3fca0->3d1436cc-ee1f-41d1-a8d7-5a7e9566a29a_a74efc4c-e00b-4efb-8178-24c4d12c81be",
+        "type": "Relational",
+        "source": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+        "targetHandle": "foreign-key-handle-a74efc4c-e00b-4efb-8178-24c4d12c81be",
+        "target": "3d1436cc-ee1f-41d1-a8d7-5a7e9566a29a",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "a74efc4c-e00b-4efb-8178-24c4d12c81be",
+            "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+            "columns": [
+              {
+                "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                "name": "D_SSN",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "91016276-e3c2-4c25-a164-380ca4b3fca0->0dabf1a2-5aef-444b-ad98-b015d1d83a01_a6a2ec3b-f904-45ba-9708-5a0ceb1c85cf",
+        "type": "Relational",
+        "source": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+        "targetHandle": "foreign-key-handle-a6a2ec3b-f904-45ba-9708-5a0ceb1c85cf",
+        "target": "0dabf1a2-5aef-444b-ad98-b015d1d83a01",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "a6a2ec3b-f904-45ba-9708-5a0ceb1c85cf",
+            "sourceTableId": "91016276-e3c2-4c25-a164-380ca4b3fca0",
+            "columns": [
+              {
+                "id": "fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                "name": "D_SSN",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "90aaa9a4-f397-4d9c-87e4-0b39961a754c->0dabf1a2-5aef-444b-ad98-b015d1d83a01_f0612766-76a2-46b2-8b33-d11f7bca781e",
+        "type": "Relational",
+        "source": "90aaa9a4-f397-4d9c-87e4-0b39961a754c",
+        "targetHandle": "foreign-key-handle-f0612766-76a2-46b2-8b33-d11f7bca781e",
+        "target": "0dabf1a2-5aef-444b-ad98-b015d1d83a01",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "f0612766-76a2-46b2-8b33-d11f7bca781e",
+            "sourceTableId": "90aaa9a4-f397-4d9c-87e4-0b39961a754c",
+            "columns": [
+              {
+                "id": "fk_7e9eac04-4c18-4967-97d0-2d982c0347ce",
+                "name": "Department_Code",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "39b69799-ac91-4237-aaca-6b5006213d20->27287a18-1513-49ad-831c-6e93a40161bf_81658ecf-4e96-4919-9d9a-ef584400a734",
+        "type": "Relational",
+        "source": "39b69799-ac91-4237-aaca-6b5006213d20",
+        "targetHandle": "foreign-key-handle-81658ecf-4e96-4919-9d9a-ef584400a734",
+        "target": "27287a18-1513-49ad-831c-6e93a40161bf",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "81658ecf-4e96-4919-9d9a-ef584400a734",
+            "sourceTableId": "39b69799-ac91-4237-aaca-6b5006213d20",
+            "columns": [
+              {
+                "id": "fk_dded1c00-2a68-418b-9d02-9c46655d1038",
+                "name": "Room_ID",
+                "type": "None"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4ceb3473-416c-4302-9096-6e35176696f5->90aaa9a4-f397-4d9c-87e4-0b39961a754c_d35b58cf-742c-412a-b346-fca295dca6d4",
+        "type": "Relational",
+        "source": "4ceb3473-416c-4302-9096-6e35176696f5",
+        "targetHandle": "foreign-key-handle-d35b58cf-742c-412a-b346-fca295dca6d4",
+        "target": "90aaa9a4-f397-4d9c-87e4-0b39961a754c",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "d35b58cf-742c-412a-b346-fca295dca6d4",
+            "sourceTableId": "4ceb3473-416c-4302-9096-6e35176696f5",
+            "columns": [
+              {
+                "id": "fk_785d424d-b66f-4dcd-a281-1c2b48334a5e",
+                "name": "Hospital_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "7d9b3b48-fd76-440b-8719-76842467160f->f6db8fbb-ef37-4008-8ba4-431c076d06c7_5974c578-ea21-40b6-a156-9add297fd430",
+        "type": "Relational",
+        "source": "7d9b3b48-fd76-440b-8719-76842467160f",
+        "targetHandle": "foreign-key-handle-5974c578-ea21-40b6-a156-9add297fd430",
+        "target": "f6db8fbb-ef37-4008-8ba4-431c076d06c7",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "5974c578-ea21-40b6-a156-9add297fd430",
+            "sourceTableId": "7d9b3b48-fd76-440b-8719-76842467160f",
+            "columns": [
+              {
+                "id": "fk_151656e6-bc8d-4e9d-9371-41616729bc03",
+                "name": "Appointment_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "4b6a22dd-fa7c-4b74-a127-8eb9b6644bfc->27287a18-1513-49ad-831c-6e93a40161bf_31b65328-4447-4d50-b727-05aec8ce35f8",
+        "type": "Relational",
+        "source": "4b6a22dd-fa7c-4b74-a127-8eb9b6644bfc",
+        "targetHandle": "foreign-key-handle-31b65328-4447-4d50-b727-05aec8ce35f8",
+        "target": "27287a18-1513-49ad-831c-6e93a40161bf",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "31b65328-4447-4d50-b727-05aec8ce35f8",
+            "sourceTableId": "4b6a22dd-fa7c-4b74-a127-8eb9b6644bfc",
+            "columns": [
+              {
+                "id": "fk_1153790d-430f-4d40-8265-95c3b527ffbe",
+                "name": "eye_exam_id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "7d9b3b48-fd76-440b-8719-76842467160f->27287a18-1513-49ad-831c-6e93a40161bf_0fc2c06d-3d75-4a13-9ea5-cc7ee295175b",
+        "type": "Relational",
+        "source": "7d9b3b48-fd76-440b-8719-76842467160f",
+        "targetHandle": "foreign-key-handle-0fc2c06d-3d75-4a13-9ea5-cc7ee295175b",
+        "target": "27287a18-1513-49ad-831c-6e93a40161bf",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "0fc2c06d-3d75-4a13-9ea5-cc7ee295175b",
+            "sourceTableId": "7d9b3b48-fd76-440b-8719-76842467160f",
+            "columns": [
+              {
+                "id": "fk_151656e6-bc8d-4e9d-9371-41616729bc03",
+                "name": "Appointment_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "806763d7-061d-4dbc-9461-13fa5e6007ed->27287a18-1513-49ad-831c-6e93a40161bf_ea2201bc-142a-4cf3-9845-07c6c48751b7",
+        "type": "Relational",
+        "source": "806763d7-061d-4dbc-9461-13fa5e6007ed",
+        "targetHandle": "foreign-key-handle-ea2201bc-142a-4cf3-9845-07c6c48751b7",
+        "target": "27287a18-1513-49ad-831c-6e93a40161bf",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "ea2201bc-142a-4cf3-9845-07c6c48751b7",
+            "sourceTableId": "806763d7-061d-4dbc-9461-13fa5e6007ed",
+            "columns": [
+              {
+                "id": "fk_19c01550-f1a2-456f-91e0-f99b7af08149",
+                "name": "surgery_id",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "7d9b3b48-fd76-440b-8719-76842467160f->caad3b22-3584-4c82-833d-7687d24fa64d_8e9c2d9c-f5ca-4e1a-88d1-f79d95114a76",
+        "type": "Relational",
+        "source": "7d9b3b48-fd76-440b-8719-76842467160f",
+        "targetHandle": "foreign-key-handle-8e9c2d9c-f5ca-4e1a-88d1-f79d95114a76",
+        "target": "caad3b22-3584-4c82-833d-7687d24fa64d",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "8e9c2d9c-f5ca-4e1a-88d1-f79d95114a76",
+            "sourceTableId": "7d9b3b48-fd76-440b-8719-76842467160f",
+            "columns": [
+              {
+                "id": "fk_151656e6-bc8d-4e9d-9371-41616729bc03",
+                "name": "Appointment_ID",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "caad3b22-3584-4c82-833d-7687d24fa64d->e7b4efe1-bf7e-45d7-b633-fc68a5e8944c_758c22d6-ee98-4d9e-a27a-ffbc31702b40",
+        "type": "Relational",
+        "source": "caad3b22-3584-4c82-833d-7687d24fa64d",
+        "targetHandle": "foreign-key-handle-758c22d6-ee98-4d9e-a27a-ffbc31702b40",
+        "target": "e7b4efe1-bf7e-45d7-b633-fc68a5e8944c",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "758c22d6-ee98-4d9e-a27a-ffbc31702b40",
+            "sourceTableId": "caad3b22-3584-4c82-833d-7687d24fa64d",
+            "columns": [
+              {
+                "id": "fk_fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                "name": "D_SSN",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_92bc51b6-058a-4251-b908-29041f07774c",
+                "name": "P_SSN",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                "name": "P_Number",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "e7b4efe1-bf7e-45d7-b633-fc68a5e8944c->d81dc06f-794a-4dc3-b4be-6d3e20770dc8_441fd08e-d74b-47a8-a6cf-43d5827f9813",
+        "type": "Relational",
+        "source": "e7b4efe1-bf7e-45d7-b633-fc68a5e8944c",
+        "targetHandle": "foreign-key-handle-441fd08e-d74b-47a8-a6cf-43d5827f9813",
+        "target": "d81dc06f-794a-4dc3-b4be-6d3e20770dc8",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "441fd08e-d74b-47a8-a6cf-43d5827f9813",
+            "sourceTableId": "e7b4efe1-bf7e-45d7-b633-fc68a5e8944c",
+            "columns": [
+              {
+                "id": "fk_abdadeca-ec21-4f28-9b0a-025510827f32",
+                "name": "Payment_ID",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_fk_5915d240-7ddd-420d-acc2-ef92fd0d51b0",
+                "name": "D_SSN",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_fk_92bc51b6-058a-4251-b908-29041f07774c",
+                "name": "P_SSN",
+                "type": "INT"
+              },
+              {
+                "id": "fk_fk_fk_d34347bf-7d9d-4665-8a7a-34a2a9deb17f",
+                "name": "P_Number",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": 82.81460831086497,
+      "y": 232.89964436531284,
+      "zoom": 0.5
+    }
+  },
+  "name": "Ophthalmology (1) (1)",
+  "folder": {
+    "name": "Diagrams",
+    "folderType": 1,
+    "depth": 0,
+    "id": 325062
+  },
+  "id": 460383,
+  "updatedAtTimestamp": 1779731824
+}
